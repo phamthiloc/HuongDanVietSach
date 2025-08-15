@@ -145,10 +145,13 @@ Chi tiết cách cài đặt và sử dụng GitHub Desktop, xem *Cài đặt Gi
 * Bước đầu: Clone repository.
   Chỉ cần làm một lần.
 * Mỗi lần làm việc:
-  * Pull data.
+  * Pull data: Lấy data mới nhất từ GitHub.com về máy tính.
   * Thay đổi data (thay đổi nội dung, hình ảnh, file...).
-  * Commit data.
-  * Push data.
+  * Commit data: Lưu những thay đổi vào trong repository trên máy tính.
+  * Push data: Đẩy những thay đổi đã lưu trong repository trên máy tính lên GitHub.com.
+* Ngoài ra, sẽ cần biết thêm khái niệm Merge và xử lý xung đột Conflict (khi nội dung do ta sửa phát sinh xung đột với nội dung do người khác sửa).
+
+Xem thêm "Commit và Push" trong phần Phụ lục.
 
 ## 4. Quy tắc đặt tên file ảnh
 
@@ -172,11 +175,11 @@ Ví dụ
 ### 5.1. Tạo repository
 
 Với mỗi một dự án/quyển sách, chúng ta tạo cho nó một repository.
-Trên github, bấm “Create repository”
+Chi tiết xem trong phần "Tạo repository trên GitHub.com" trong Phụ lục.
 
 ### 5.2. Clone repository về máy tính
 
-TBD
+Chi tiết về việc clone repository từ GitHub.com về máy tính, xem nội dung "Clone repository" trong Phụ lục.
 
 * Trong thư mục được clone về, có thư mục .git. Ta không nên động vào các file trong thư mục này, cũng không được xóa nó.
 * Sau khi đã clone repository, ta cần tạo ít nhất là 2 file *LICENSE* và *README\.md*
@@ -263,11 +266,13 @@ Xem chi tiết hơn trên [GitHub](https://docs.github.com/en/get-started/writin
 **Mã code:**
 ```
 `Mã ngắn`
+```
 
+Mã dài nhiều dòng
 ```
-Mã dài
-nhiều dòng
-```
+Dòng 1
+Dòng 2
+Dòng 3
 ```
 
 ### 8.3. Các ký hiệu cơ bản của Mermaid
@@ -277,6 +282,7 @@ Xem chi tiết hơn trên [GitHub](https://docs.github.com/en/get-started/writin
 **Các loại sơ đồ cơ bản:**
 
 **Sơ đồ luồng (Flowchart):**
+
 ```
 ```mermaid
 graph LR
@@ -285,7 +291,9 @@ graph LR
     C --> D[Theo dõi]
 ```
 ```
+
 Kết quả
+
 ```mermaid
 graph LR
     A[Khám bệnh] --> B[Chẩn đoán]
@@ -294,6 +302,7 @@ graph LR
 ```
 
 **Sơ đồ trình tự (Sequence):**
+
 ```
 ```mermaid
 sequenceDiagram
@@ -305,7 +314,9 @@ sequenceDiagram
     BS->>BN: Kê đơn thuốc
 ```
 ```
+
 Kết quả
+
 ```mermaid
 sequenceDiagram
     participant BS as Bác sĩ
@@ -317,6 +328,7 @@ sequenceDiagram
 ```
 
 **Sơ đồ tổ chức (Organization):**
+
 ```
 ```mermaid
 graph TD
@@ -327,7 +339,9 @@ graph TD
     B --> F[Bác sĩ B]
 ```
 ```
+
 Kết quả
+
 ```mermaid
 graph TD
     A[Khoa Nội] --> B[Phòng khám 1]
@@ -358,7 +372,9 @@ graph LR
     C --> A
 ```
 ```
+
 Kết quả
+
 ```mermaid
 graph LR
     A[👤 Bệnh nhân] --> B[🏥 Bệnh viện]
@@ -389,3 +405,34 @@ graph LR
   ![09_ConfigureGit.png](material/GitHubDesktop/09_ConfigureGit.png)
 9. Đến đây, việc cài đặt GitHub Desktop hoàn tất
   ![10_LetsGetStarted.png](material/GitHubDesktop/10_LetsGetStarted.png)
+
+
+### Tạo repository trên GitHub.com
+
+* Login vào GitHub.com.
+* Click button "Create repository"
+  ![01_Button.png](material/CreateRepository/01_Button.png)
+* Nhập "Repository name" rồi click "Create repository" button.
+  ![02_InputInfo.png](material/CreateRepository/02_InputInfo.png)
+* Repository đã được tạo ra.
+  ![03_Complete.png](material/CreateRepository/03_Complete.png)
+
+### Clone repository
+
+* Trong GitHub Desktop sẽ liệt kê các repository trong phần "Your repositories". Chọn repository muốn clone về máy tính, rồi click button "Clone <tên repository>".
+  ![01_SelectRepo.png](material/CloneRepo/01_SelectRepo.png)
+* Chỉ định thư mục trên máy tính nơi ta muốn download data về, rồi click button "Clone".
+  ![02_Clone.png](material/CloneRepo/02_Clone.png)
+* Data đã được download về máy PC.
+  ![03_Complete.png](material/CloneRepo/03_Complete.png)
+* Khi mở bằng file explorer, ta sẽ thấy có các file được download về (trong hình không có file nào vì chưa có data, trừ thư mục .git)
+  ![04_Directory.png](material/CloneRepo/04_Directory.png)
+
+### Commit và Push
+
+* Khi mở GitHub Desktop và chọn repository làm việc, ta sẽ nhìn thấy danh sách các file bị thay đổi.
+  ![01_LICENSE.png](material/CreateDocument/01_LICENSE.png)
+* Chọn các file muốn "Commit" vào local repository, rồi click button "Commit".
+  ![02_Commit.png](material/CreateDocument/02_Commit.png)
+* Click button "Push branch" để đẩy data từ local repository lên GitHub.com
+  ![03_Publish.png](material/CreateDocument/03_Publish.png)
