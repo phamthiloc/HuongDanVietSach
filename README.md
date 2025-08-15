@@ -4,6 +4,8 @@
 
 Tài liệu này hướng dẫn các kiến thức cơ bản để giúp sử dụng GitHub làm nơi lưu trữ tài nguyên (ảnh, checklist, biểu mẫu, protocol...) làm tài liệu tham khảo cho sách. Người đọc sách sẽ được chỉ dẫn để tìm đến các tài nguyên này trên internet (được lưu trữ trên GitHub).
 
+Nội dung file này có thể được access thông qua GitHub page [https://phamthiloc.github.io/HuongDanVietSach/](https://phamthiloc.github.io/HuongDanVietSach/).
+
 ## 2. Khái niệm
 
 ### 2.1. Khái niệm về git
