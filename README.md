@@ -425,7 +425,10 @@ TBD
 
 ## 8. Tạo trang web danh sách file ảnh
 
-TBD
+Hãy xem các ví dụ
+
+* File [SampleImageList.md](https://github.com/phamthiloc/HuongDanVietSach/blob/main/SampleImageList.md) có thể truy cập thông qua URL [https://phamthiloc.github.io/HuongDanVietSach/SampleImageList.html](https://phamthiloc.github.io/HuongDanVietSach/SampleImageList.html)
+* File [SampleByHtml.html](https://github.com/phamthiloc/HuongDanVietSach/blob/main/SampleByHtml.html) có thể truy cập thông qua URL [https://phamthiloc.github.io/HuongDanVietSach/SampleByHtml.html](https://phamthiloc.github.io/HuongDanVietSach/SampleByHtml.html)
 
 ## 9. Phụ lục
 
