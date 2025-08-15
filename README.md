@@ -201,11 +201,223 @@ File *README\.md* là file được tự động hiển thị lên mỗi khi ta 
 
 ### 6.1. Tạo watermark
 
-TBD
+Để bảo vệ bản quyền ảnh khi chia sẻ trên GitHub, bạn có thể sử dụng các phần mềm tạo watermark sau đây. Tất cả đều hỗ trợ batch processing (xử lý nhiều ảnh cùng lúc) và tạo watermark trong suốt ở giữa ảnh:
 
-### 6.2. Tạo ảnh đen trắng.
+**1. IrfanView - Khuyến nghị cho Windows:**
+- **Giấy phép**: Miễn phí cho sử dụng cá nhân, phi thương mại
+- **Ưu điểm**: 
+  - Batch processing mạnh mẽ và nhanh
+  - Watermark text/hình ảnh với độ trong suốt tùy chỉnh
+  - Đặt vị trí chính xác (giữa ảnh, góc, tùy ý)
+  - Giao diện đơn giản, dễ sử dụng
+  - Hỗ trợ nhiều định dạng ảnh
+- **Tính năng batch processing**:
+  - File → Batch Conversion/Rename
+  - Chọn thư mục chứa ảnh
+  - Advanced → Text/Image overlay
+  - Đặt vị trí center, độ trong suốt 30-50%
+- **Phù hợp cho**: Người dùng Windows, cần xử lý nhiều ảnh nhanh
+- **Download**: [IrfanView](https://www.irfanview.com/)
 
-TBD
+**2. XnView - Đa nền tảng:**
+- **Giấy phép**: Miễn phí cho sử dụng cá nhân, phi thương mại
+- **Ưu điểm**:
+  - Hỗ trợ Windows, macOS, Linux
+  - Batch processing với nhiều tùy chọn nâng cao
+  - Watermark text/hình ảnh với độ trong suốt
+  - Giao diện trực quan, dễ sử dụng
+  - Quản lý ảnh tốt
+- **Tính năng batch processing**:
+  - Tools → Batch Processing
+  - Chọn thư mục và định dạng ảnh
+  - Transform → Text/Image overlay
+  - Cấu hình vị trí và độ trong suốt
+- **Phù hợp cho**: Người dùng đa nền tảng, cần quản lý ảnh
+- **Download**: [XnView](https://www.xnview.com/)
+
+**3. GIMP - Miễn phí hoàn toàn:**
+- **Giấy phép**: Miễn phí hoàn toàn (GNU GPL), sử dụng cho mọi mục đích
+- **Ưu điểm**:
+  - Miễn phí 100%, mã nguồn mở
+  - Tính năng mạnh mẽ như Photoshop
+  - Watermark nâng cao với độ trong suốt hoàn hảo
+  - Script tự động hóa batch processing
+  - Hỗ trợ Windows, macOS, Linux
+- **Tính năng batch processing**:
+  - Cần sử dụng Script-Fu hoặc plugin
+  - Có thể viết script tự động
+  - Watermark chính xác với nhiều tùy chọn
+- **Nhược điểm**:
+  - Phức tạp hơn cho người mới
+  - Cần thời gian học
+- **Phù hợp cho**: Người cần tính năng nâng cao, ưa thích phần mềm miễn phí
+- **Download**: [GIMP](https://www.gimp.org/)
+
+**4. ImageMagick - Dòng lệnh (Command Line):**
+- **Giấy phép**: Miễn phí hoàn toàn
+- **Ưu điểm**:
+  - Miễn phí 100%, mã nguồn mở
+  - Rất nhanh cho batch processing
+  - Watermark chính xác với độ trong suốt hoàn hảo
+  - Hỗ trợ Windows, macOS, Linux
+  - Có thể tạo script tự động
+- **Tính năng batch processing**:
+  - Sử dụng lệnh: `composite -gravity center -alpha set -channel A -evaluate multiply 0.5 watermark.png input.jpg output.jpg`
+  - Có thể xử lý toàn bộ thư mục
+  - Nhiều tùy chọn nâng cao cho watermark
+- **Nhược điểm**:
+  - Giao diện dòng lệnh, không thân thiện
+  - Cần kiến thức về command line
+  - Cú pháp phức tạp
+- **Phù hợp cho**: Người quen thuộc với dòng lệnh, cần xử lý nhanh
+- **Download**: [ImageMagick](https://imagemagick.org/)
+
+**Khuyến nghị:**
+- **Người mới bắt đầu (Windows)**: IrfanView
+- **Người dùng macOS/Linux**: XnView
+- **Người cần tính năng nâng cao**: GIMP
+- **Người quen thuộc dòng lệnh**: ImageMagick
+
+**Lưu ý quan trọng:**
+- **IrfanView và XnView**: Chỉ miễn phí cho sử dụng cá nhân, phi thương mại
+- **GIMP**: Miễn phí hoàn toàn cho mọi mục đích sử dụng
+- Tất cả đều hỗ trợ tạo watermark trong suốt ở giữa ảnh
+- Batch processing giúp xử lý nhiều ảnh cùng lúc, tiết kiệm thời gian
+
+### 6.2. Tạo ảnh đen trắng
+
+Để chuyển đổi ảnh màu sang đen trắng (grayscale) cho mục đích in ấn hoặc tiết kiệm dung lượng, bạn có thể sử dụng các phần mềm sau đây. Tất cả đều hỗ trợ batch processing và hoạt động tốt trên Windows, macOS:
+
+**1. IrfanView - Khuyến nghị cho Windows:**
+- **Giấy phép**: Miễn phí cho sử dụng cá nhân, phi thương mại
+- **Ưu điểm**: 
+  - Batch processing nhanh và hiệu quả
+  - Chuyển đổi grayscale với nhiều tùy chọn
+  - Có thể kết hợp với watermark trong cùng một lần xử lý
+  - Giao diện đơn giản, dễ sử dụng
+- **Tính năng batch processing**:
+  - File → Batch Conversion/Rename
+  - Chọn thư mục chứa ảnh
+  - Advanced → Effects → Grayscale
+  - Có thể thêm watermark cùng lúc
+- **Phù hợp cho**: Người dùng Windows, cần xử lý nhiều ảnh nhanh
+- **Download**: [IrfanView](https://www.irfanview.com/)
+
+**2. XnView - Đa nền tảng:**
+- **Giấy phép**: Miễn phí cho sử dụng cá nhân, phi thương mại
+- **Ưu điểm**:
+  - Hỗ trợ Windows, macOS, Linux
+  - Batch processing với nhiều tùy chọn nâng cao
+  - Chuyển đổi grayscale với nhiều thuật toán khác nhau
+  - Có thể điều chỉnh độ tương phản sau khi chuyển đổi
+  - Quản lý ảnh tốt
+- **Tính năng batch processing**:
+  - Tools → Batch Processing
+  - Chọn thư mục và định dạng ảnh
+  - Transform → Grayscale
+  - Có thể thêm các bước xử lý khác
+- **Phù hợp cho**: Người dùng đa nền tảng, cần quản lý ảnh
+- **Download**: [XnView](https://www.xnview.com/)
+
+**3. GIMP - Miễn phí hoàn toàn:**
+- **Giấy phép**: Miễn phí hoàn toàn (GNU GPL), sử dụng cho mọi mục đích
+- **Ưu điểm**:
+  - Miễn phí 100%, mã nguồn mở
+  - Tính năng mạnh mẽ như Photoshop
+  - Chuyển đổi grayscale với nhiều thuật toán chuyên nghiệp
+  - Script tự động hóa batch processing
+  - Có thể tùy chỉnh độ tương phản, độ sáng
+- **Tính năng batch processing**:
+  - Cần sử dụng Script-Fu hoặc plugin
+  - Có thể viết script tự động
+  - Chuyển đổi grayscale chính xác với nhiều tùy chọn
+- **Nhược điểm**:
+  - Phức tạp hơn cho người mới
+  - Cần thời gian học
+- **Phù hợp cho**: Người cần tính năng nâng cao, ưa thích phần mềm miễn phí
+- **Download**: [GIMP](https://www.gimp.org/)
+
+**4. ImageMagick - Dòng lệnh (Command Line):**
+- **Giấy phép**: Miễn phí hoàn toàn
+- **Ưu điểm**:
+  - Miễn phí 100%, mã nguồn mở
+  - Rất nhanh cho batch processing
+  - Hỗ trợ Windows, macOS, Linux
+  - Có thể tạo script tự động
+- **Tính năng batch processing**:
+  - Sử dụng lệnh: `mogrify -colorspace gray *.jpg`
+  - Có thể xử lý toàn bộ thư mục
+  - Nhiều tùy chọn nâng cao
+- **Nhược điểm**:
+  - Giao diện dòng lệnh, không thân thiện
+  - Cần kiến thức về command line
+- **Phù hợp cho**: Người quen thuộc với dòng lệnh
+- **Download**: [ImageMagick](https://imagemagick.org/)
+
+**Khuyến nghị:**
+- **Người mới bắt đầu (Windows)**: IrfanView
+- **Người dùng macOS/Linux**: XnView
+- **Người cần tính năng nâng cao**: GIMP
+- **Người quen thuộc dòng lệnh**: ImageMagick
+
+**Lưu ý quan trọng:**
+- **IrfanView và XnView**: Chỉ miễn phí cho sử dụng cá nhân, phi thương mại
+- **GIMP và ImageMagick**: Miễn phí hoàn toàn cho mọi mục đích sử dụng
+- Batch processing giúp xử lý nhiều ảnh cùng lúc, tiết kiệm thời gian
+- Có thể kết hợp chuyển đổi grayscale với watermark trong cùng một lần xử lý
+- Nên lưu ảnh gốc màu trước khi chuyển đổi để có thể khôi phục sau này
+
+## Tạo QR code
+
+Để tạo QR code cho URL của GitHub repository, giúp người đọc dễ dàng truy cập tài liệu, bạn có thể sử dụng các dịch vụ và phần mềm miễn phí sau đây. Tất cả đều tạo QR code thuần, không có redirect:
+
+**1. Dịch vụ Online miễn phí:**
+
+**QR Code Generator (qr-code-generator.com):**
+- **Ưu điểm**: Miễn phí hoàn toàn, không redirect, không watermark
+- **Tính năng**: Tạo QR code cho URL, text, email, vCard
+- **Tùy chọn**: Có thể tùy chỉnh màu sắc, kích thước
+- **Download**: Có thể tải về dạng PNG, SVG, PDF
+- **Link**: [QR Code Generator](https://www.qr-code-generator.com/)
+
+**QRCode Monkey:**
+- **Ưu điểm**: Miễn phí, không redirect, tùy chỉnh cao
+- **Tính năng**: QR code có logo, màu sắc tùy chỉnh, nhiều định dạng
+- **Tùy chọn**: Logo ở giữa, màu sắc gradient, hình dạng tùy chỉnh
+- **Download**: PNG, SVG, EPS, PDF
+- **Link**: [QRCode Monkey](https://www.qrcode-monkey.com/)
+
+**GoQR.me:**
+- **Ưu điểm**: Đơn giản, nhanh, không redirect
+- **Tính năng**: Tạo QR code ngay lập tức khi nhập URL
+- **Tùy chọn**: Cơ bản, ít tùy chỉnh
+- **Download**: PNG, SVG
+- **Link**: [GoQR.me](https://goqr.me/)
+
+**2. Phần mềm Offline miễn phí:**
+
+**QR Code Studio (Windows):**
+- **Ưu điểm**: Miễn phí, không cần internet
+- **Tính năng**: Tạo QR code cho URL, text, contact info
+- **Tùy chọn**: Màu sắc, kích thước, logo
+- **Download**: [QR Code Studio](https://www.qrcode-studio.com/)
+
+**QR Code Generator (Desktop):**
+- **Ưu điểm**: Miễn phí, đơn giản
+- **Tính năng**: Tạo QR code cơ bản
+- **Tùy chọn**: Ít tùy chỉnh
+- **Download**: Có sẵn trên nhiều nền tảng
+
+**Khuyến nghị:**
+- **Online nhanh chóng**: GoQR.me (đơn giản) hoặc QRCode Monkey (tùy chỉnh cao)
+- **Offline an toàn**: QR Code Studio (Windows) hoặc QR Code Generator Desktop
+
+**Lưu ý quan trọng:**
+- Tất cả đều tạo QR code thuần, không có redirect
+- Có thể tải về và sử dụng offline
+- Nên test QR code trước khi sử dụng
+- Có thể in QR code vào tài liệu để người đọc dễ dàng truy cập GitHub repository
+- QR code nên có kích thước đủ lớn để scan dễ dàng (tối thiểu 2x2 cm khi in)
 
 ## 7. Tạo trang web danh sách file ảnh
 
@@ -434,5 +646,5 @@ graph LR
   ![01_LICENSE.png](material/CreateDocument/01_LICENSE.png)
 * Chọn các file muốn "Commit" vào local repository, rồi click button "Commit".
   ![02_Commit.png](material/CreateDocument/02_Commit.png)
-* Click button "Push branch" để đẩy data từ local repository lên GitHub.com
+* Click button "Push origin" để đẩy data từ local repository lên GitHub.com
   ![03_Publish.png](material/CreateDocument/03_Publish.png)
