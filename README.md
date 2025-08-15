@@ -197,6 +197,10 @@ Xem nội dung chi tiết về giấy phép CC BY-NC-ND trong phụ lục.
 
 File *README\.md* là file được tự động hiển thị lên mỗi khi ta mở một thư mục trên GitHub. Ta nên để các hướng dẫn tổng quan liên quan đến các nội dung chứa trong thư mục này trong file README\.md.
 
+### 5.5. Thiết lập GitHub page
+
+TBD
+
 ## 6. Làm việc với file ảnh
 
 ### 6.1. Tạo watermark
@@ -367,7 +371,7 @@ File *README\.md* là file được tự động hiển thị lên mỗi khi ta 
 - Có thể kết hợp chuyển đổi grayscale với watermark trong cùng một lần xử lý
 - Nên lưu ảnh gốc màu trước khi chuyển đổi để có thể khôi phục sau này
 
-## Tạo QR code
+## 7. Tạo QR code
 
 Để tạo QR code cho URL của GitHub repository, giúp người đọc dễ dàng truy cập tài liệu, bạn có thể sử dụng các dịch vụ và phần mềm miễn phí sau đây. Tất cả đều tạo QR code thuần, không có redirect:
 
@@ -419,13 +423,13 @@ File *README\.md* là file được tự động hiển thị lên mỗi khi ta 
 - Có thể in QR code vào tài liệu để người đọc dễ dàng truy cập GitHub repository
 - QR code nên có kích thước đủ lớn để scan dễ dàng (tối thiểu 2x2 cm khi in)
 
-## 7. Tạo trang web danh sách file ảnh
+## 8. Tạo trang web danh sách file ảnh
 
 TBD
 
-## 8. Phụ lục
+## 9. Phụ lục
 
-### 8.1. Giấy phép CC BY-NC-ND
+### 9.1. Giấy phép CC BY-NC-ND
 
 CC BY-NC-ND là loại giấy phép hạn chế nhất trong số các giấy phép Creative Commons. Nó cho phép người khác sử dụng tác phẩm của bạn, nhưng đi kèm với ba điều kiện chính:
 * *Attribution (Ghi công - BY)*: Đây là điều kiện cơ bản và bắt buộc cho mọi giấy phép Creative Commons. Bất kỳ ai sử dụng tác phẩm của bạn đều phải ghi công cho bạn với tư cách là tác giả gốc. Điều này bao gồm việc cung cấp tên tác giả, liên kết đến giấy phép và chỉ ra nếu có bất kỳ thay đổi nào về mặt kỹ thuật.
@@ -434,7 +438,7 @@ CC BY-NC-ND là loại giấy phép hạn chế nhất trong số các giấy ph
 
 Tóm lại, giấy phép *CC BY-NC-ND* cho phép người khác chia sẻ tác phẩm của bạn, nhưng chỉ khi họ *ghi công bạn, không sử dụng cho mục đích thương mại và không thay đổi tác phẩm gốc*.
 
-### 8.2. Các ký hiệu cơ bản của Markdown
+### 9.2. Các ký hiệu cơ bản của Markdown
 
 Xem chi tiết hơn trên [GitHub](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
@@ -487,7 +491,7 @@ Dòng 2
 Dòng 3
 ```
 
-### 8.3. Các ký hiệu cơ bản của Mermaid
+### 9.3. Các ký hiệu cơ bản của Mermaid
 
 Xem chi tiết hơn trên [GitHub](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams)
 
@@ -594,7 +598,7 @@ graph LR
     C --> A
 ```
 
-### 8.4. Cài đặt GitHub Desktop
+### 9.4. Cài đặt GitHub Desktop
 
 1. Mở trang [Download GitHub Desktop](https://docs.github.com/en/desktop/installing-and-authenticating-to-github-desktop/installing-github-desktop), click *Download GitHub Desktop* button.
   ![01_Download.png](material/GitHubDesktop/01_Download.png)
@@ -619,7 +623,7 @@ graph LR
   ![10_LetsGetStarted.png](material/GitHubDesktop/10_LetsGetStarted.png)
 
 
-### Tạo repository trên GitHub.com
+### 9.5. Tạo repository trên GitHub.com
 
 * Login vào GitHub.com.
 * Click button "Create repository"
@@ -629,7 +633,7 @@ graph LR
 * Repository đã được tạo ra.
   ![03_Complete.png](material/CreateRepository/03_Complete.png)
 
-### Clone repository
+### 9.6. Clone repository
 
 * Trong GitHub Desktop sẽ liệt kê các repository trong phần "Your repositories". Chọn repository muốn clone về máy tính, rồi click button "Clone <tên repository>".
   ![01_SelectRepo.png](material/CloneRepo/01_SelectRepo.png)
@@ -640,7 +644,7 @@ graph LR
 * Khi mở bằng file explorer, ta sẽ thấy có các file được download về (trong hình không có file nào vì chưa có data, trừ thư mục .git)
   ![04_Directory.png](material/CloneRepo/04_Directory.png)
 
-### Commit và Push
+### 9.7. Commit và Push
 
 * Khi mở GitHub Desktop và chọn repository làm việc, ta sẽ nhìn thấy danh sách các file bị thay đổi.
   ![01_LICENSE.png](material/CreateDocument/01_LICENSE.png)
