@@ -203,9 +203,68 @@ File *README\.md* là file được tự động hiển thị lên mỗi khi ta 
 
 TBD
 
-## 6. Làm việc với file ảnh
+## 6. Tạo QR code
 
-### 6.1. Tạo watermark
+Để tạo QR code cho URL của GitHub repository, giúp người đọc dễ dàng truy cập tài liệu, bạn có thể sử dụng các dịch vụ và phần mềm miễn phí sau đây. Tất cả đều tạo QR code thuần, không có redirect:
+
+**1. Dịch vụ Online miễn phí:**
+
+**QR Code Generator (qr-code-generator.com):**
+- **Ưu điểm**: Miễn phí hoàn toàn, không redirect, không watermark
+- **Tính năng**: Tạo QR code cho URL, text, email, vCard
+- **Tùy chọn**: Có thể tùy chỉnh màu sắc, kích thước
+- **Download**: Có thể tải về dạng PNG, SVG, PDF
+- **Link**: [QR Code Generator](https://www.qr-code-generator.com/)
+
+**QRCode Monkey:**
+- **Ưu điểm**: Miễn phí, không redirect, tùy chỉnh cao
+- **Tính năng**: QR code có logo, màu sắc tùy chỉnh, nhiều định dạng
+- **Tùy chọn**: Logo ở giữa, màu sắc gradient, hình dạng tùy chỉnh
+- **Download**: PNG, SVG, EPS, PDF
+- **Link**: [QRCode Monkey](https://www.qrcode-monkey.com/)
+
+**GoQR.me:**
+- **Ưu điểm**: Đơn giản, nhanh, không redirect
+- **Tính năng**: Tạo QR code ngay lập tức khi nhập URL
+- **Tùy chọn**: Cơ bản, ít tùy chỉnh
+- **Download**: PNG, SVG
+- **Link**: [GoQR.me](https://goqr.me/)
+
+**2. Phần mềm Offline miễn phí:**
+
+**QR Code Studio (Windows):**
+- **Ưu điểm**: Miễn phí, không cần internet
+- **Tính năng**: Tạo QR code cho URL, text, contact info
+- **Tùy chọn**: Màu sắc, kích thước, logo
+- **Download**: [QR Code Studio](https://www.qrcode-studio.com/)
+
+**QR Code Generator (Desktop):**
+- **Ưu điểm**: Miễn phí, đơn giản
+- **Tính năng**: Tạo QR code cơ bản
+- **Tùy chọn**: Ít tùy chỉnh
+- **Download**: Có sẵn trên nhiều nền tảng
+
+**Khuyến nghị:**
+- **Online nhanh chóng**: GoQR.me (đơn giản) hoặc QRCode Monkey (tùy chỉnh cao)
+- **Offline an toàn**: QR Code Studio (Windows) hoặc QR Code Generator Desktop
+
+**Lưu ý quan trọng:**
+- Tất cả đều tạo QR code thuần, không có redirect
+- Có thể tải về và sử dụng offline
+- Nên test QR code trước khi sử dụng
+- Có thể in QR code vào tài liệu để người đọc dễ dàng truy cập GitHub repository
+- QR code nên có kích thước đủ lớn để scan dễ dàng (tối thiểu 2x2 cm khi in)
+
+## 7. Tạo trang web danh sách file ảnh
+
+Hãy xem các ví dụ
+
+* File [SampleImageList.md](https://github.com/phamthiloc/HuongDanVietSach/blob/main/SampleImageList.md) có thể truy cập thông qua URL [https://phamthiloc.github.io/HuongDanVietSach/SampleImageList.html](https://phamthiloc.github.io/HuongDanVietSach/SampleImageList.html)
+* File [SampleByHtml.html](https://github.com/phamthiloc/HuongDanVietSach/blob/main/SampleByHtml.html) có thể truy cập thông qua URL [https://phamthiloc.github.io/HuongDanVietSach/SampleByHtml.html](https://phamthiloc.github.io/HuongDanVietSach/SampleByHtml.html)
+
+## 8. Làm việc với file ảnh
+
+### 8.1. Tạo watermark
 
 Để bảo vệ bản quyền ảnh khi chia sẻ trên GitHub, bạn có thể sử dụng các phần mềm tạo watermark sau đây. Tất cả đều hỗ trợ batch processing (xử lý nhiều ảnh cùng lúc) và tạo watermark trong suốt ở giữa ảnh:
 
@@ -290,7 +349,7 @@ TBD
 - Tất cả đều hỗ trợ tạo watermark trong suốt ở giữa ảnh
 - Batch processing giúp xử lý nhiều ảnh cùng lúc, tiết kiệm thời gian
 
-### 6.2. Tạo ảnh đen trắng
+### 8.2. Tạo ảnh đen trắng
 
 Để chuyển đổi ảnh màu sang đen trắng (grayscale) cho mục đích in ấn hoặc tiết kiệm dung lượng, bạn có thể sử dụng các phần mềm sau đây. Tất cả đều hỗ trợ batch processing và hoạt động tốt trên Windows, macOS:
 
@@ -372,65 +431,6 @@ TBD
 - Batch processing giúp xử lý nhiều ảnh cùng lúc, tiết kiệm thời gian
 - Có thể kết hợp chuyển đổi grayscale với watermark trong cùng một lần xử lý
 - Nên lưu ảnh gốc màu trước khi chuyển đổi để có thể khôi phục sau này
-
-## 7. Tạo QR code
-
-Để tạo QR code cho URL của GitHub repository, giúp người đọc dễ dàng truy cập tài liệu, bạn có thể sử dụng các dịch vụ và phần mềm miễn phí sau đây. Tất cả đều tạo QR code thuần, không có redirect:
-
-**1. Dịch vụ Online miễn phí:**
-
-**QR Code Generator (qr-code-generator.com):**
-- **Ưu điểm**: Miễn phí hoàn toàn, không redirect, không watermark
-- **Tính năng**: Tạo QR code cho URL, text, email, vCard
-- **Tùy chọn**: Có thể tùy chỉnh màu sắc, kích thước
-- **Download**: Có thể tải về dạng PNG, SVG, PDF
-- **Link**: [QR Code Generator](https://www.qr-code-generator.com/)
-
-**QRCode Monkey:**
-- **Ưu điểm**: Miễn phí, không redirect, tùy chỉnh cao
-- **Tính năng**: QR code có logo, màu sắc tùy chỉnh, nhiều định dạng
-- **Tùy chọn**: Logo ở giữa, màu sắc gradient, hình dạng tùy chỉnh
-- **Download**: PNG, SVG, EPS, PDF
-- **Link**: [QRCode Monkey](https://www.qrcode-monkey.com/)
-
-**GoQR.me:**
-- **Ưu điểm**: Đơn giản, nhanh, không redirect
-- **Tính năng**: Tạo QR code ngay lập tức khi nhập URL
-- **Tùy chọn**: Cơ bản, ít tùy chỉnh
-- **Download**: PNG, SVG
-- **Link**: [GoQR.me](https://goqr.me/)
-
-**2. Phần mềm Offline miễn phí:**
-
-**QR Code Studio (Windows):**
-- **Ưu điểm**: Miễn phí, không cần internet
-- **Tính năng**: Tạo QR code cho URL, text, contact info
-- **Tùy chọn**: Màu sắc, kích thước, logo
-- **Download**: [QR Code Studio](https://www.qrcode-studio.com/)
-
-**QR Code Generator (Desktop):**
-- **Ưu điểm**: Miễn phí, đơn giản
-- **Tính năng**: Tạo QR code cơ bản
-- **Tùy chọn**: Ít tùy chỉnh
-- **Download**: Có sẵn trên nhiều nền tảng
-
-**Khuyến nghị:**
-- **Online nhanh chóng**: GoQR.me (đơn giản) hoặc QRCode Monkey (tùy chỉnh cao)
-- **Offline an toàn**: QR Code Studio (Windows) hoặc QR Code Generator Desktop
-
-**Lưu ý quan trọng:**
-- Tất cả đều tạo QR code thuần, không có redirect
-- Có thể tải về và sử dụng offline
-- Nên test QR code trước khi sử dụng
-- Có thể in QR code vào tài liệu để người đọc dễ dàng truy cập GitHub repository
-- QR code nên có kích thước đủ lớn để scan dễ dàng (tối thiểu 2x2 cm khi in)
-
-## 8. Tạo trang web danh sách file ảnh
-
-Hãy xem các ví dụ
-
-* File [SampleImageList.md](https://github.com/phamthiloc/HuongDanVietSach/blob/main/SampleImageList.md) có thể truy cập thông qua URL [https://phamthiloc.github.io/HuongDanVietSach/SampleImageList.html](https://phamthiloc.github.io/HuongDanVietSach/SampleImageList.html)
-* File [SampleByHtml.html](https://github.com/phamthiloc/HuongDanVietSach/blob/main/SampleByHtml.html) có thể truy cập thông qua URL [https://phamthiloc.github.io/HuongDanVietSach/SampleByHtml.html](https://phamthiloc.github.io/HuongDanVietSach/SampleByHtml.html)
 
 ## 9. Phụ lục
 
