@@ -1,0 +1,219 @@
+<html>
+<head>
+  <title>Ví dụ về trang danh sách các ảnh</title>
+  <style>
+    /* Style cho ảnh có thể click */
+    .clickable-image {
+      cursor: pointer;
+      transition: transform 0.2s;
+      border: 2px solid #ddd;
+      border-radius: 5px;
+    }
+    
+    .clickable-image:hover {
+      transform: scale(1.05);
+      border-color: #007bff;
+    }
+    
+    /* Modal popup */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.9);
+    }
+    
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 90%;
+      max-height: 90%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
+    .close:hover {
+      color: #bbb;
+    }
+    
+    /* Thêm caption cho ảnh phóng to */
+    .modal-caption {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+      text-align: center;
+      color: #ccc;
+      padding: 10px 0;
+      height: 150px;
+    }
+  </style>
+</head>
+<body>
+<h1>Ví dụ về trang danh sách các ảnh</h1>
+
+<h2>Tổng quan</h2>
+
+Đây là ví dụ về trang danh sách các ảnh.<br />
+Đây có thể là file .md, cũng có thể là file .md.<br />
+Nó được accesss thông qua GitHub page <a href="https://phamthiloc.github.io/HuongDanVietSach/SampleByHtml.html">https://phamthiloc.github.io/HuongDanVietSach/SampleByHtml.html</a>.<br />
+
+QR code của nó<br />
+
+<img width="200" src="material/SampleByHtmlQRCode.png" alt="SampleByHtmlQRCode" class="clickable-image" onclick="openModal(this)" />
+
+<!-- Modal popup -->
+<div id="imageModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+  <div class="modal-caption" id="modalCaption"></div>
+</div>
+
+<h2>Chương 1: Cài đặt GitHub Desktop</h2>
+
+<ol>
+  <li>Hình 1-1: Download GitHub Desktop<br />
+    <img width="200" src="material/GitHubDesktop/01_Download.png" alt="01_Download.png" class="clickable-image" onclick="openModal(this)" />
+  </li>
+  
+  <li>Hình 1-2: Download now.<br />
+    <img width="200" src="material/GitHubDesktop/02_DownloadNow.png" alt="02_DownloadNow.png" class="clickable-image" onclick="openModal(this)" />
+  </li>
+  
+  <li>Hình 1-3: Download for Windows.<br />
+    <img width="200" src="material/GitHubDesktop/03_DownloadForWindows.png" alt="03_DownloadForWindows.png" class="clickable-image" onclick="openModal(this)" />
+  </li>
+  
+  <li>Hình 1-4: Sign in to GitHub\.com<br />
+    <img width="200" src="material/GitHubDesktop/04_Signin.png" alt="04_Signin.png" class="clickable-image" onclick="openModal(this)" />
+  </li>
+  
+  <li>Hình 1-5: Authorize<br />
+    <img width="200" src="material/GitHubDesktop/05_Authorize.png" alt="05_Authorize.png" class="clickable-image" onclick="openModal(this)" />
+  </li>
+  
+  <li>Hình 1-6: Authorize desktop<br />
+    <img width="200" src="material/GitHubDesktop/06_AuthorizeGitHubDesktop.png" alt="06_AuthorizeGitHubDesktop.png" class="clickable-image" onclick="openModal(this)" />
+  </li>
+  
+  <li>Hình 1-7: Confirm<br />
+    <img width="200" src="material/GitHubDesktop/07_ConfirmAccess.png" alt="07_ConfirmAccess.png" class="clickable-image" onclick="openModal(this)" />
+  </li>
+  
+  <li>Hình 1-8: Open<br />
+    <img width="200" src="material/GitHubDesktop/08_OpenGitHubDesktop.png" alt="08_OpenGitHubDesktop.png" class="clickable-image" onclick="openModal(this)" />
+  </li>
+  
+  <li>Hình 1-9: Finish<br />
+    <img width="200" src="material/GitHubDesktop/09_ConfigureGit.png" alt="09_ConfigureGit.png" class="clickable-image" onclick="openModal(this)" />
+  </li>
+  
+  <li>Hình 1-10: Let's get started!<br />
+    <img width="200" src="material/GitHubDesktop/10_LetsGetStarted.png" alt="10_LetsGetStarted.png" class="clickable-image" onclick="openModal(this)" />
+  </li>
+</ol>
+
+
+<h2>Chương 2: Tạo repository trên GitHub.com</h2>
+
+<ul>
+  <li>Hình 2-1: Create repository<br />
+    <img width="200" src="material/CreateRepository/01_Button.png" alt="01_Button.png" class="clickable-image" onclick="openModal(this)" />
+  </li>
+  
+  <li>Hình 2-2: Input information<br />
+    <img width="200" src="material/CreateRepository/02_InputInfo.png" alt="02_InputInfo.png" class="clickable-image" onclick="openModal(this)" />
+  </li>
+  
+  <li>Hình 2-3: Complete<br />
+    <img width="200" src="material/CreateRepository/03_Complete.png" alt="03_Complete.png" class="clickable-image" onclick="openModal(this)" />
+  </li>
+</ul>
+
+<h2>Chương 3: Clone repository</h2>
+
+<ul>
+  <li>Hình 3-1: Clone <tên repository><br />
+    <img width="200" src="material/CloneRepo/01_SelectRepo.png" alt="01_SelectRepo.png" class="clickable-image" onclick="openModal(this)" />
+  </li>
+  
+  <li>Hình 3-2: Clone<br />
+    <img width="200" src="material/CloneRepo/02_Clone.png" alt="02_Clone.png" class="clickable-image" onclick="openModal(this)" />
+  </li>
+  
+  <li>Hình 3-3: Complete<br />
+    <img width="200" src="material/CloneRepo/03_Complete.png" alt="03_Complete.png" class="clickable-image" onclick="openModal(this)" />
+  </li>
+  
+  <li>Hình 3-4: File explorer<br />
+    <img width="200" src="material/CloneRepo/04_Directory.png" alt="04_Directory.png" class="clickable-image" onclick="openModal(this)" />
+  </li>
+</ul>
+
+<h2>Chương 4: Commit và Push</h2>
+
+<ul>
+
+  <li>Hình 4-1: License.<br />
+    <img width="200" src="material/CreateDocument/01_LICENSE.png" alt="01_LICENSE.png" class="clickable-image" onclick="openModal(this)" />
+  </li>
+  
+  <li>Hình 4-2: Commit.<br />
+    <img width="200" src="material/CreateDocument/02_Commit.png" alt="02_Commit.png" class="clickable-image" onclick="openModal(this)" />
+  </li>
+  
+  <li>Hình 4-3: Publish.<br />
+    <img width="200" src="material/CreateDocument/03_Publish.png" alt="03_Publish.png" class="clickable-image" onclick="openModal(this)" />
+  </li>
+</ul>
+
+<script>
+// Mở modal khi click vào ảnh
+function openModal(img) {
+  var modal = document.getElementById("imageModal");
+  var modalImg = document.getElementById("modalImage");
+  var captionText = document.getElementById("modalCaption");
+  
+  modal.style.display = "block";
+  modalImg.src = img.src;
+  captionText.innerHTML = img.alt;
+}
+
+// Đóng modal
+function closeModal() {
+  document.getElementById("imageModal").style.display = "none";
+}
+
+// Đóng modal khi click bên ngoài ảnh
+document.getElementById("imageModal").onclick = function(e) {
+  if (e.target === this) {
+    closeModal();
+  }
+}
+
+// Đóng modal bằng phím ESC
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    closeModal();
+  }
+});
+</script>
+
+</body>
+</html>
