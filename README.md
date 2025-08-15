@@ -1,12 +1,12 @@
 # Sử dụng GitHub để lưu trữ ảnh cho tài liệu
 
-## Tổng quan
+## 1. Tổng quan
 
 Tài liệu này hướng dẫn các kiến thức cơ bản để giúp sử dụng GitHub làm nơi lưu trữ tài nguyên (ảnh, checklist, biểu mẫu, protocol...) làm tài liệu tham khảo cho sách. Người đọc sách sẽ được chỉ dẫn để tìm đến các tài nguyên này trên internet (được lưu trữ trên GitHub).
 
-## 1. Khái niệm
+## 2. Khái niệm
 
-### 1.1. Khái niệm về git
+### 2.1. Khái niệm về git
 
 Git là một hệ thống quản lý phiên bản (version control system) - giống như một "hồ sơ bệnh án điện tử" cho các file và thư mục trên máy tính. Hãy tưởng tượng Git như một hệ thống lưu trữ thông minh giúp bạn:
 
@@ -55,7 +55,7 @@ graph LR
 Khi bạn thay đổi file trên máy tính, bạn "commit" để lưu lại. Sau đó "push" lên GitHub để chia sẻ với người khác. Người khác sẽ "pull" về để có được phiên bản mới nhất.
 
 
-### 1.2. Khái niệm về Github
+### 2.2. Khái niệm về Github
 
 GitHub là một nền tảng lưu trữ và chia sẻ code trên internet - giống như một "thư viện y khoa trực tuyến" cho các dự án phần mềm và tài liệu. Hãy tưởng tượng GitHub như một kho lưu trữ khổng lồ trên internet:
 
@@ -78,8 +78,7 @@ GitHub là một nền tảng lưu trữ và chia sẻ code trên internet - gi�
 
 GitHub sử dụng Git làm nền tảng, nhưng cung cấp thêm nhiều tính năng như giao diện web, quản lý dự án, và cộng đồng chia sẻ.
 
-
-### Viết tài liệu với Markdown
+### 2.3. Viết tài liệu với Markdown
 
 Markdown là một ngôn ngữ đánh dấu đơn giản để viết tài liệu - giống như một "hệ thống ghi chép thông minh" giúp bạn tạo ra văn bản có cấu trúc rõ ràng. Markdown được sử dụng rộng rãi trên GitHub để viết tài liệu hướng dẫn.
 
@@ -103,19 +102,45 @@ Markdown là một ngôn ngữ đánh dấu đơn giản để viết tài liệ
 
 Hãy xem thêm "Các ký hiệu cơ bản của Markdown" trong phần phụ lục.
 
-### 1.3. GitHub Desktop
+### 2.4. Vẽ hình trong Markdown với Mermaid
 
-[Download GitHub Desktop](https://docs.github.com/en/desktop/installing-and-authenticating-to-github-desktop/installing-github-desktop) và cài đặt trên máy của bạn.
+Mermaid là một công cụ vẽ sơ đồ bằng văn bản - giống như một "hệ thống vẽ sơ đồ thông minh" giúp bạn tạo ra các biểu đồ, sơ đồ từ những dòng chữ đơn giản. Mermaid được hỗ trợ trực tiếp trên GitHub.
 
-TBD
+**Mermaid là gì:**
+- **Vẽ sơ đồ bằng văn bản**: Thay vì dùng chuột vẽ, bạn viết các dòng lệnh để tạo sơ đồ
+- **Tự động hiển thị**: GitHub tự động chuyển đổi văn bản thành hình ảnh đẹp
+- **Dễ chỉnh sửa**: Chỉ cần sửa văn bản, sơ đồ sẽ tự động cập nhật
+- **Chuyên nghiệp**: Tạo ra các sơ đồ có chất lượng cao, phù hợp cho tài liệu
 
-### Visual Studio Code editor
+Mermaid giúp bạn tạo ra các sơ đồ chuyên nghiệp mà không cần kỹ năng vẽ hay phần mềm phức tạp.
 
-Visual Studio Code là một chương trình soạn thảo văn bản, có thể cho phép ta soạn thảo file Markdown (.md) và nhìn được kết quả hiển thị trong lúc đang soạn thảo.
+Hãy xem thêm "Các ký hiệu cơ bản của Mermaid" trong phần phụ lục.
 
-Download Visual Studio Code [tại đây](https://code.visualstudio.com/)
+### 2.5. GitHub Desktop
 
-### 1.4. Quy trình làm việc với github
+GitHub Desktop là phần mềm giúp clone, pull, commit, push data lên GitHub một cách thuận tiện.
+
+Chi tiết cách cài đặt và sử dụng GitHub Desktop, xem *Cài đặt GitHub Desktop* trong phần Phụ lục.
+
+### 2.6. Phần mềm soạn thảo Markdown miễn phí
+
+Để soạn thảo file Markdown một cách thuận tiện, bạn có thể sử dụng các phần mềm editor miễn phí sau đây. Tất cả đều có chế độ preview (xem trước) và hoạt động tốt trên cả Windows và macOS:
+
+**1. MarkText**
+- **Ưu điểm**: Miễn phí hoàn toàn, mã nguồn mở
+- **Chế độ preview**: WYSIWYG
+- **Tính năng**: Hỗ trợ nhiều định dạng xuất (PDF, HTML)
+- **Phù hợp cho**: Người muốn phần mềm mã nguồn mở
+- **Download**: [MarkText](https://marktext.app/)
+
+**2. Visual Studio Code (VS Code)**
+- **Ưu điểm**: Miễn phí, mạnh mẽ, có nhiều extension hỗ trợ
+- **Chế độ preview**: Có thể xem trước Markdown ngay trong editor
+- **Tính năng**: Tự động hoàn thành, kiểm tra lỗi, hỗ trợ Git
+- **Phù hợp cho**: Người mới bắt đầu đến chuyên nghiệp
+- **Download**: [Visual Studio Code](https://code.visualstudio.com/)
+
+## 3. Quy trình làm việc với github
 
 * Bước đầu: Clone repository.
   Chỉ cần làm một lần.
@@ -125,14 +150,14 @@ Download Visual Studio Code [tại đây](https://code.visualstudio.com/)
   * Commit data.
   * Push data.
 
-## Quy tắc đặt tên
+## 4. Quy tắc đặt tên file ảnh
 
 Tên file ảnh: chia vào các thư mục `<Nhóm việc>/<number>_<Chú thích>.<extension>`
 
-* *<Nhóm việc>* là dễ phân tách các file ảnh theo nội dung sách, cho dễ quản lý.
-* *<number\>* là số thứ tự, theo thứ tự xuất hiện trong sách. Cái này chỉ cần tính tương đối, không cần chặt chẽ (ví dụ trong tương lai ta có thể chèn thêm các ảnh vào cùng số thứ tự 04).
-* *<Chú thích>* là từ gợi nhớ để ta dễ hiểu nội dung ảnh mà không cần mở nó ra. Nên đặt tên file kiểu CamelCase (viết hoa chữ đầu của từ).
-* *<extension\>* là đuôi file ảnh, ví dụ như: jpg, jpeg, png…
+* **<Nhóm việc>** là dễ phân tách các file ảnh theo nội dung sách, cho dễ quản lý.
+* **<number\>** là số thứ tự, theo thứ tự xuất hiện trong sách. Cái này chỉ cần tính tương đối, không cần chặt chẽ (ví dụ trong tương lai ta có thể chèn thêm các ảnh vào cùng số thứ tự 04).
+* **<Chú thích>** là từ gợi nhớ để ta dễ hiểu nội dung ảnh mà không cần mở nó ra. Nên đặt tên file kiểu CamelCase (viết hoa chữ đầu của từ).
+* **<extension\>** là đuôi file ảnh, ví dụ như: jpg, jpeg, png…
 
 Ví dụ
 * CreateRepository/00_Button.png
@@ -142,22 +167,22 @@ Ví dụ
 * GitHubDesktop/02_DownloadNow.png
 * GitHubDesktop/03_DownloadForWindows.png
 
-## Làm việc với Github
+## 5. Làm việc với Github
 
-### Tạo repository
+### 5.1. Tạo repository
 
 Với mỗi một dự án/quyển sách, chúng ta tạo cho nó một repository.
 Trên github, bấm “Create repository”
 
-### Clone repository về máy tính
+### 5.2. Clone repository về máy tính
 
 TBD
 
 * Trong thư mục được clone về, có thư mục .git. Ta không nên động vào các file trong thư mục này, cũng không được xóa nó.
 * Sau khi đã clone repository, ta cần tạo ít nhất là 2 file *LICENSE* và *README\.md*
-  ![LICENSE and README](material/CreateDocument_01_LICENSE.png)
+  ![LICENSE and README](material/CreateDocument/01_LICENSE.png)
 
-### Tạo file LICENSE
+### 5.3. Tạo file LICENSE
 
 Nên tạo file LICENSE để tạo cơ sở pháp lý bảo về quyền sở hữu của mình trước các tranh chấp trong tương lai.
 
@@ -165,13 +190,27 @@ Với các tài liệu viết sách, ta nên lựa chọn giấy phép *Creative
 
 Xem nội dung chi tiết về giấy phép CC BY-NC-ND trong phụ lục.
 
-### Tạo file README\.md
+### 5.4. Tạo file README\.md
 
 File *README\.md* là file được tự động hiển thị lên mỗi khi ta mở một thư mục trên GitHub. Ta nên để các hướng dẫn tổng quan liên quan đến các nội dung chứa trong thư mục này trong file README\.md.
 
-## Phụ lục
+## 6. Làm việc với file ảnh
 
-### Giấy phép CC BY-NC-ND
+### 6.1. Tạo watermark
+
+TBD
+
+### 6.2. Tạo ảnh đen trắng.
+
+TBD
+
+## 7. Tạo trang web danh sách file ảnh
+
+TBD
+
+## 8. Phụ lục
+
+### 8.1. Giấy phép CC BY-NC-ND
 
 CC BY-NC-ND là loại giấy phép hạn chế nhất trong số các giấy phép Creative Commons. Nó cho phép người khác sử dụng tác phẩm của bạn, nhưng đi kèm với ba điều kiện chính:
 * *Attribution (Ghi công - BY)*: Đây là điều kiện cơ bản và bắt buộc cho mọi giấy phép Creative Commons. Bất kỳ ai sử dụng tác phẩm của bạn đều phải ghi công cho bạn với tư cách là tác giả gốc. Điều này bao gồm việc cung cấp tên tác giả, liên kết đến giấy phép và chỉ ra nếu có bất kỳ thay đổi nào về mặt kỹ thuật.
@@ -180,7 +219,9 @@ CC BY-NC-ND là loại giấy phép hạn chế nhất trong số các giấy ph
 
 Tóm lại, giấy phép *CC BY-NC-ND* cho phép người khác chia sẻ tác phẩm của bạn, nhưng chỉ khi họ *ghi công bạn, không sử dụng cho mục đích thương mại và không thay đổi tác phẩm gốc*.
 
-### Các ký hiệu cơ bản của Markdown
+### 8.2. Các ký hiệu cơ bản của Markdown
+
+Xem chi tiết hơn trên [GitHub](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
 **Tiêu đề:**
 ```
@@ -228,3 +269,123 @@ Mã dài
 nhiều dòng
 ```
 ```
+
+### 8.3. Các ký hiệu cơ bản của Mermaid
+
+Xem chi tiết hơn trên [GitHub](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams)
+
+**Các loại sơ đồ cơ bản:**
+
+**Sơ đồ luồng (Flowchart):**
+```
+```mermaid
+graph LR
+    A[Khám bệnh] --> B[Chẩn đoán]
+    B --> C[Điều trị]
+    C --> D[Theo dõi]
+```
+```
+Kết quả
+```mermaid
+graph LR
+    A[Khám bệnh] --> B[Chẩn đoán]
+    B --> C[Điều trị]
+    C --> D[Theo dõi]
+```
+
+**Sơ đồ trình tự (Sequence):**
+```
+```mermaid
+sequenceDiagram
+    participant BS as Bác sĩ
+    participant BN as Bệnh nhân
+    BS->>BN: Khám bệnh
+    BN->>BS: Mô tả triệu chứng
+    BS->>BS: Chẩn đoán
+    BS->>BN: Kê đơn thuốc
+```
+```
+Kết quả
+```mermaid
+sequenceDiagram
+    participant BS as Bác sĩ
+    participant BN as Bệnh nhân
+    BS->>BN: Khám bệnh
+    BN->>BS: Mô tả triệu chứng
+    BS->>BS: Chẩn đoán
+    BS->>BN: Kê đơn thuốc
+```
+
+**Sơ đồ tổ chức (Organization):**
+```
+```mermaid
+graph TD
+    A[Khoa Nội] --> B[Phòng khám 1]
+    A --> C[Phòng khám 2]
+    A --> D[Phòng xét nghiệm]
+    B --> E[Bác sĩ A]
+    B --> F[Bác sĩ B]
+```
+```
+Kết quả
+```mermaid
+graph TD
+    A[Khoa Nội] --> B[Phòng khám 1]
+    A --> C[Phòng khám 2]
+    A --> D[Phòng xét nghiệm]
+    B --> E[Bác sĩ A]
+    B --> F[Bác sĩ B]
+```
+
+**Tại sao sử dụng Mermaid:**
+- **Không cần phần mềm vẽ**: Chỉ cần viết văn bản
+- **Dễ dàng cập nhật**: Sửa văn bản là sơ đồ thay đổi ngay
+- **Hỗ trợ tốt trên GitHub**: Hiển thị đẹp và chuyên nghiệp
+- **Tương thích cao**: Có thể sử dụng ở nhiều nơi khác
+
+**Lưu ý khi sử dụng:**
+- Bắt đầu với *\```mermaid* và kết thúc bằng *\```*
+- Sử dụng các từ khóa như `graph`, `sequenceDiagram`
+- Có thể thêm emoji và màu sắc để làm đẹp
+- GitHub sẽ tự động hiển thị sơ đồ khi commit
+
+**Ví dụ đơn giản:**
+```
+```mermaid
+graph LR
+    A[👤 Bệnh nhân] --> B[🏥 Bệnh viện]
+    B --> C[💊 Thuốc]
+    C --> A
+```
+```
+Kết quả
+```mermaid
+graph LR
+    A[👤 Bệnh nhân] --> B[🏥 Bệnh viện]
+    B --> C[💊 Thuốc]
+    C --> A
+```
+
+### 8.4. Cài đặt GitHub Desktop
+
+1. Mở trang [Download GitHub Desktop](https://docs.github.com/en/desktop/installing-and-authenticating-to-github-desktop/installing-github-desktop), click *Download GitHub Desktop* button.
+  ![01_Download.png](material/GitHubDesktop/01_Download.png)
+1. Click *Download now* button.
+  ![02_DownloadNow.png](material/GitHubDesktop/02_DownloadNow.png)
+1. Click *Download for Window* button.
+  ![03_DownloadForWindows.png](material/GitHubDesktop/03_DownloadForWindows.png)
+1. Sau khi download chương trình cài đặt (GitHubDesktopSetup-x64.exe trên Windows PC), chạy nó, click vào button "Sign in to GitHub\.com"
+  ![05_Signin.png](material/GitHubDesktop/04_Signin.png)
+3. Web browser sẽ mở ra, login vào GitHub bằng account đã đăng ký.
+  Màn hình hiển thị có thể khác tùy vào trạng thái bạn đang login GitHub trên web như thế nào.
+  ![04_Authorize.png](material/GitHubDesktop/05_Authorize.png)
+1. Sau khi login vào GitHub trên web, click button "Authorize desktop"
+  ![06_AuthorizeGitHubDesktop.png](material/GitHubDesktop/06_AuthorizeGitHubDesktop.png)
+3. Click button "Confirm"
+  ![07_ConfirmAccess.png](material/GitHubDesktop/07_ConfirmAccess.png)
+5. Khi được hỏi có mở chương trình "GitHubDesktop" hay không, click button "Open"
+  ![08_OpenGitHubDesktop.png](material/GitHubDesktop/08_OpenGitHubDesktop.png)
+7. Trên màn hình "GitHub Desktop", click button "Finish"
+  ![09_ConfigureGit.png](material/GitHubDesktop/09_ConfigureGit.png)
+9. Đến đây, việc cài đặt GitHub Desktop hoàn tất
+  ![10_LetsGetStarted.png](material/GitHubDesktop/10_LetsGetStarted.png)
